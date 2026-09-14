@@ -1,1 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Amor ❤️</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0b0b0f;
+      color: #fff;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1100px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    header {
+      padding: 22px 0;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: 800;
+      color: #ff3b81;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 70px 20px 45px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: rgba(255,59,129,.12);
+      color: #ff4b8b;
+      border: 1px solid rgba(255,59,129,.3);
+      padding: 8px 16px;
+      border-radius: 30px;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(38px, 7vw, 72px);
+      line-height: 1.05;
+      margin-bottom: 20px;
+    }
+
+    h1 span {
+      color: #ff3b81;
+    }
+
+    .subtitle {
+      max-width: 680px;
+      margin: auto;
+      color: #bdbdc7;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 17px 34px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #ff176f, #ff4f91);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 17px;
+      box-shadow: 0 10px 30px rgba(255, 23, 111, .25);
+      transition: .2s;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      padding: 35px 0 70px;
+    }
+
+    .card {
+      background: #141419;
+      border: 1px solid #24242c;
+      border-radius: 16px;
+      padding: 28px;
+      text-align: center;
+    }
+
+    .icon {
+      font-size: 38px;
+      margin-bottom: 15px;
+    }
+
+    .card h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #a7a7b2;
+      line-height: 1.5;
+    }
+
+    .offer {
+      background: linear-gradient(
+        135deg,
+        #18101a,
+        #160d13
+      );
+      border: 1px solid #39202b;
+      border-radius: 20px;
+      padding: 45px 25px;
+      text-align: center;
+      margin-bottom: 70px;
+    }
+
+    .offer h2 {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+
+    .offer p {
+      color: #bdbdc7;
+      max-width: 600px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    footer {
+      border-top: 1px solid rgba(255,255,255,.08);
+      padding: 25px 0;
+      text-align: center;
+      color: #777783;
+      font-size: 13px;
+    }
+
+    @media (max-width: 700px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding-top: 50px;
+      }
+
+      .subtitle {
+        font-size: 16px;
+      }
+
+      .offer h2 {
+        font-size: 27px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <div class="logo">❤️ AMOR</div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="tag">✨ Conteúdo exclusivo</div>
+
+      <h1>
+        Um espaço feito para<br>
+        <span>aproximar você.</span>
+      </h1>
+
+      <p class="subtitle">
+        Descubra conteúdos exclusivos, novidades e experiências
+        preparadas especialmente para quem quer ficar mais perto.
+      </p>
+
+      <!-- TROQUE O LINK ABAIXO PELO SEU LINK -->
+      <a
+        class="button"
+        href="https://SEU-LINK-AQUI.com"
+        target="_blank"
+      >
+        QUERO ACESSAR AGORA ❤️
+      </a>
+    </section>
+
+
+    <section class="container">
+      <div class="cards">
+
+        <div class="card">
+          <div class="icon">🔒</div>
+          <h2>Acesso exclusivo</h2>
+          <p>
+            Conteúdo reservado para quem possui acesso.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">💎</div>
+          <h2>Conteúdo especial</h2>
+          <p>
+            Novidades e materiais exclusivos em um só lugar.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icon">❤️</div>
+          <h2>Experiência personalizada</h2>
+          <p>
+            Um espaço pensado para criar uma experiência diferente.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="container">
+      <div class="offer">
+
+        <h2>Pronto para conhecer?</h2>
+
+        <p>
+          Clique no botão abaixo para continuar e acessar
+          o conteúdo disponível.
+        </p>
+
+        <!-- TROQUE O LINK ABAIXO PELO SEU LINK -->
+        <a
+          class="button"
+          href="https://SEU-LINK-AQUI.com"
+          target="_blank"
+        >
+          ACESSAR CONTEÚDO
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer>
+    © 2026 Amor — Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
