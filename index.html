@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,9 +14,11 @@
 
   <title>Conheça as novidades</title>
 
-  <!-- =========================
+
+  <!-- =====================================================
        TIKTOK PIXEL
-  ========================== -->
+       ===================================================== -->
+
   <script>
     !function (w, d, t) {
       w.TiktokAnalyticsObject = t;
@@ -35,23 +38,24 @@
         "alias",
         "group",
         "enableCookie",
-        "disableCookie",
-        "holdConsent",
-        "revokeConsent",
-        "grantConsent"
+        "disableCookie"
       ];
 
       ttq.setAndDefer = function (t, e) {
         t[e] = function () {
           t.push([
-            e,
-            ...Array.prototype.slice.call(arguments, 0)
-          ]);
+            e
+          ].concat(
+            Array.prototype.slice.call(arguments, 0)
+          ));
         };
       };
 
       for (var i = 0; i < ttq.methods.length; i++) {
-        ttq.setAndDefer(ttq, ttq.methods[i]);
+        ttq.setAndDefer(
+          ttq,
+          ttq.methods[i]
+        );
       }
 
       ttq.instance = function (t) {
@@ -61,43 +65,76 @@
           n < ttq.methods.length;
           n++
         ) {
-          ttq.setAndDefer(e, ttq.methods[n]);
+          ttq.setAndDefer(
+            e,
+            ttq.methods[n]
+          );
         }
 
         return e;
       };
 
       ttq.load = function (e, n) {
-        var r =
+
+        var i =
           "https://analytics.tiktok.com/i18n/pixel/events.js";
 
         ttq._i = ttq._i || {};
+
         ttq._i[e] = [];
-        ttq._i[e]._u = r;
+
+        ttq._i[e]._u = i;
 
         ttq._t = ttq._t || {};
+
         ttq._t[e] = +new Date;
 
         ttq._o = ttq._o || {};
+
         ttq._o[e] = n || {};
 
-        n = document.createElement("script");
-        n.type = "text/javascript";
-        n.async = true;
-        n.src = r + "?sdkid=" + e + "&lib=" + t;
+        var o = document.createElement("script");
 
-        e = document.getElementsByTagName("script")[0];
-        e.parentNode.insertBefore(n, e);
+        o.type = "text/javascript";
+
+        o.async = true;
+
+        o.src =
+          i +
+          "?sdkid=" +
+          e +
+          "&lib=" +
+          t;
+
+        var a =
+          document.getElementsByTagName("script")[0];
+
+        a.parentNode.insertBefore(o, a);
       };
 
-      /* NOVO PIXEL */
+
+      /* =====================================================
+         SEU PIXEL
+         ===================================================== */
+
       ttq.load("DAO81ABC77UFPTFVTMQG");
+
       ttq.page();
 
-    }(window, document, "ttq");
+    }(
+      window,
+      document,
+      "ttq"
+    );
   </script>
 
+  <!-- =====================================================
+       FIM TIKTOK PIXEL
+       ===================================================== -->
+
+
   <style>
+
     * {
       margin: 0;
       padding: 0;
@@ -193,7 +230,12 @@
       border-radius: 12px;
       font-weight: 800;
       box-shadow:
-        0 10px 30px rgba(255, 40, 120, 0.22);
+        0 10px 30px rgba(
+          255,
+          40,
+          120,
+          0.22
+        );
       transition:
         transform 0.2s ease,
         box-shadow 0.2s ease;
@@ -201,8 +243,14 @@
 
     .button:hover {
       transform: translateY(-2px);
+
       box-shadow:
-        0 14px 35px rgba(255, 40, 120, 0.3);
+        0 14px 35px rgba(
+          255,
+          40,
+          120,
+          0.3
+        );
     }
 
     .button:active {
@@ -238,6 +286,7 @@
       border-radius: 16px;
       border: 1px solid #332832;
       background: #18151b;
+
       display: flex;
       align-items: center;
       justify-content: center;
@@ -332,7 +381,11 @@
       }
 
       .hero h1 {
-        font-size: clamp(36px, 10vw, 48px);
+        font-size: clamp(
+          36px,
+          10vw,
+          48px
+        );
       }
 
       .subtitle {
@@ -369,18 +422,35 @@
         font-size: 27px;
       }
     }
+
   </style>
+
 </head>
+
 
 <body>
 
+
+  <!-- =====================================================
+       CABEÇALHO
+       ===================================================== -->
+
   <header>
+
     <div class="container">
+
       <div class="logo">
         ✨ NOVIDADES
       </div>
+
     </div>
+
   </header>
+
+
+  <!-- =====================================================
+       HERO
+       ===================================================== -->
 
   <section class="hero">
 
@@ -390,7 +460,9 @@
 
     <h1>
       Confira as novidades<br>
-      <span>e veja o que está disponível.</span>
+      <span>
+        e veja o que está disponível.
+      </span>
     </h1>
 
     <p class="subtitle">
@@ -398,6 +470,7 @@
       acesso completo. Confira as opções e continue
       quando quiser.
     </p>
+
 
     <a
       class="button"
@@ -409,7 +482,16 @@
 
   </section>
 
+
+
+  <!-- =====================================================
+       CONTEÚDO PRINCIPAL
+       ===================================================== -->
+
   <main class="container">
+
+
+    <!-- BLOCO DE ACESSO -->
 
     <div class="teaser">
 
@@ -418,8 +500,10 @@
       </h2>
 
       <p>
-        Veja as informações e opções disponíveis no próximo passo.
+        Veja as informações e opções disponíveis
+        no próximo passo.
       </p>
+
 
       <div
         class="locked"
@@ -444,6 +528,7 @@
 
       </div>
 
+
       <a
         class="button"
         href="https://t.me/Vivisantsss_bot"
@@ -454,7 +539,14 @@
 
     </div>
 
+
+
+    <!-- =====================================================
+         CARDS
+         ===================================================== -->
+
     <div class="cards">
+
 
       <div class="card">
 
@@ -472,6 +564,7 @@
 
       </div>
 
+
       <div class="card">
 
         <div class="icon">
@@ -487,6 +580,7 @@
         </p>
 
       </div>
+
 
       <div class="card">
 
@@ -504,7 +598,14 @@
 
       </div>
 
+
     </div>
+
+
+
+    <!-- =====================================================
+         OFERTA / CTA FINAL
+         ===================================================== -->
 
     <div class="offer">
 
@@ -516,6 +617,7 @@
         Clique abaixo para continuar.
       </p>
 
+
       <a
         class="button"
         href="https://t.me/Vivisantsss_bot"
@@ -526,11 +628,26 @@
 
     </div>
 
+
   </main>
 
+
+
+  <!-- =====================================================
+       RODAPÉ
+       ===================================================== -->
+
   <footer>
+
     © 2026 — Todos os direitos reservados.
+
   </footer>
+
+
+
+  <!-- =====================================================
+       EVENTO DE CLIQUE
+       ===================================================== -->
 
   <script>
 
@@ -554,5 +671,7 @@
 
   </script>
 
+
 </body>
+
 </html>
