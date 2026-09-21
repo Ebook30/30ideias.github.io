@@ -1,39 +1,8 @@
-
-      text-align: center;
-      padding: 48px 20px 55px;
-    }
-
-    .tag {
-      display: inline-block;
-
-      color: #ff72a8;
-      background: #24121b;
-      border: 1px solid #5a2039;
-
-      padding: 8px 15px;
-      border-radius: 30px;
-      margin-bottom: 20px;
-
-      font-size: 14px;
-      font-weight: 700;
-    }
-
-    h1 {
-      font-size: clamp(38px, 7vw, 58px);
-      line-height: 1.06;
-      margin-bottom: 18px;
-    }
-
-    h1 span {
-      color:<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta
     name="description"
@@ -44,9 +13,9 @@
 
   <title>Conheça as novidades</title>
 
-  <!-- =====================================================
+  <!-- =========================
        TIKTOK PIXEL
-  ====================================================== -->
+  ========================== -->
   <script>
     !function (w, d, t) {
       w.TiktokAnalyticsObject = t;
@@ -105,8 +74,10 @@
         ttq._i = ttq._i || {};
         ttq._i[e] = [];
         ttq._i[e]._u = r;
+
         ttq._t = ttq._t || {};
         ttq._t[e] = +new Date;
+
         ttq._o = ttq._o || {};
         ttq._o[e] = n || {};
 
@@ -119,17 +90,19 @@
         e.parentNode.insertBefore(n, e);
       };
 
+      /* PIXEL NOVO */
       ttq.load("DAO81ABC77UFPTFVTMQG");
       ttq.page();
 
     }(window, document, "ttq");
   </script>
 
-  <!-- =====================================================
+
+  <!-- =========================
        ESTILOS
-  ====================================================== -->
+  ========================== -->
   <style>
-    /* RESET */
+
     * {
       margin: 0;
       padding: 0;
@@ -141,19 +114,11 @@
     }
 
     body {
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
+      font-family: Arial, Helvetica, sans-serif;
       background: #09090d;
       color: #ffffff;
       line-height: 1.5;
       min-height: 100vh;
-    }
-
-    img {
-      max-width: 100%;
     }
 
     a {
@@ -161,6 +126,7 @@
     }
 
     /* HEADER */
+
     header {
       padding: 18px 20px;
       border-bottom: 1px solid #222222;
@@ -188,7 +154,34 @@
     }
 
     /* HERO */
-    .hero { #ff3b81;
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px 65px;
+    }
+
+    .tag {
+      display: inline-block;
+      color: #ff72a8;
+      background: #24121b;
+      border: 1px solid #5a2039;
+
+      padding: 8px 15px;
+      border-radius: 30px;
+      margin-bottom: 20px;
+
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 7vw, 58px);
+      line-height: 1.06;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 span {
+      color: #ff3b81;
     }
 
     .subtitle {
@@ -202,18 +195,18 @@
     }
 
     /* BOTÕES */
+
     .button {
       display: inline-block;
 
       margin-top: 26px;
       padding: 17px 32px;
 
-      background:
-        linear-gradient(
-          135deg,
-          #ff2878,
-          #ff4f95
-        );
+      background: linear-gradient(
+        135deg,
+        #ff2878,
+        #ff4f95
+      );
 
       color: #ffffff;
       text-decoration: none;
@@ -241,33 +234,8 @@
       transform: translateY(0);
     }
 
-    /* PERFIL */
-    .profile {
-      max-width: 420px;
-      margin: 10px auto 55px;
-
-      background: #15151b;
-      border: 1px solid #292932;
-
-      border-radius: 22px;
-      padding: 12px;
-
-      box-shadow:
-        0 20px 60px rgba(0, 0, 0, 0.35);
-    }
-
-    .profile img {
-      display: block;
-
-      width: 100%;
-      aspect-ratio: 4 / 5;
-
-      object-fit: cover;
-
-      border-radius: 15px;
-    }
-
     /* TEASER */
+
     .teaser {
       max-width: 760px;
       margin: 0 auto 65px;
@@ -291,7 +259,8 @@
       margin-bottom: 22px;
     }
 
-    /* IMAGEM BLOQUEADA */
+    /* ÁREA DE INFORMAÇÕES */
+
     .locked {
       position: relative;
 
@@ -306,24 +275,20 @@
       border: 1px solid #332832;
 
       background: #18151b;
-    }
 
-    .locked img {
-      width: 100%;
-      height: 100%;
-
-      object-fit: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .lock-overlay {
-      position: absolute;
-      inset: 0;
-
       display: flex;
       align-items: center;
       justify-content: center;
 
       flex-direction: column;
+
+      text-align: center;
     }
 
     .lock-icon {
@@ -343,6 +308,7 @@
     }
 
     /* CARDS */
+
     .cards {
       display: grid;
 
@@ -378,16 +344,16 @@
       color: #aaaaaa;
     }
 
-    /* OFERTA */
+    /* OFERTA FINAL */
+
     .offer {
       text-align: center;
 
-      background:
-        linear-gradient(
-          180deg,
-          #191018,
-          #121015
-        );
+      background: linear-gradient(
+        180deg,
+        #191018,
+        #121015
+      );
 
       border: 1px solid #38202d;
 
@@ -407,22 +373,8 @@
       color: #bbbbbb;
     }
 
-    /* AVISO */
-    .notice {
-      max-width: 700px;
-
-      margin: 0 auto 30px;
-
-      padding: 0 20px;
-
-      text-align: center;
-
-      color: #85858d;
-
-      font-size: 12px;
-    }
-
     /* FOOTER */
+
     footer {
       text-align: center;
 
@@ -436,16 +388,15 @@
     }
 
     /* RESPONSIVO */
+
     @media (max-width: 700px) {
 
       .hero {
-        padding:
-          38px 15px 45px;
+        padding: 40px 15px 45px;
       }
 
       .hero h1 {
-        font-size:
-          clamp(36px, 10vw, 48px);
+        font-size: clamp(36px, 10vw, 48px);
       }
 
       .subtitle {
@@ -461,10 +412,6 @@
 
       .cards {
         grid-template-columns: 1fr;
-      }
-
-      .profile {
-        max-width: 360px;
       }
 
       .teaser {
@@ -487,26 +434,32 @@
         font-size: 27px;
       }
     }
+
   </style>
 </head>
 
+
 <body>
 
-  <!-- =====================================================
+  <!-- =========================
        HEADER
-  ====================================================== -->
+  ========================== -->
+
   <header>
     <div class="container">
+
       <div class="logo">
         ✨ NOVIDADES
       </div>
+
     </div>
   </header>
 
 
-  <!-- =====================================================
+  <!-- =========================
        HERO
-  ====================================================== -->
+  ========================== -->
+
   <section class="hero">
 
     <div class="tag">
@@ -535,19 +488,14 @@
   </section>
 
 
-  <!-- =====================================================
-       CONTEÚDO PRINCIPAL
-  ====================================================== -->
+  <!-- =========================
+       CONTEÚDO
+  ========================== -->
+
   <main class="container">
 
-
-    <!-- FOTO DE PERFIL -->
-    <div class="profile">
-
-    </div>
-
-
     <!-- TEASER -->
+
     <div class="teaser">
 
       <h2>
@@ -559,7 +507,6 @@
       </p>
 
 
-      <!-- PRÉVIA BLOQUEADA -->
       <div
         class="locked"
         aria-label="Informações adicionais"
@@ -584,7 +531,6 @@
       </div>
 
 
-      <!-- BOTÃO -->
       <a
         class="button"
         href="https://t.me/Vivisantsss_bot"
@@ -596,13 +542,12 @@
     </div>
 
 
-    <!-- ===================================================
+    <!-- =========================
          CARDS
-    ==================================================== -->
+    ========================== -->
+
     <div class="cards">
 
-
-      <!-- FOTOS -->
       <div class="card">
 
         <div class="icon">
@@ -620,7 +565,6 @@
       </div>
 
 
-      <!-- VÍDEOS -->
       <div class="card">
 
         <div class="icon">
@@ -638,7 +582,6 @@
       </div>
 
 
-      <!-- CONTEÚDO -->
       <div class="card">
 
         <div class="icon">
@@ -655,13 +598,13 @@
 
       </div>
 
-
     </div>
 
 
-    <!-- ===================================================
-         OFERTA FINAL
-    ==================================================== -->
+    <!-- =========================
+         CTA FINAL
+    ========================== -->
+
     <div class="offer">
 
       <h2>
@@ -685,19 +628,19 @@
   </main>
 
 
-  <!-- =====================================================
+  <!-- =========================
        RODAPÉ
-  ====================================================== -->
+  ========================== -->
+
   <footer>
-
     © 2026 — Todos os direitos reservados.
-
   </footer>
 
 
-  <!-- =====================================================
-       JAVASCRIPT
-  ====================================================== -->
+  <!-- =========================
+       TRACKING DOS CLIQUES
+  ========================== -->
+
   <script>
 
     function registrarClique(local) {
