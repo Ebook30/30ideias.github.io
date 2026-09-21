@@ -14,20 +14,85 @@
 
   <title>Conheça as novidades</title>
 
+  <!-- TikTok Pixel Code Start -->
+  <script>
+  !function (w, d, t) {
+    w.TiktokAnalyticsObject=t;
+    var ttq=w[t]=w[t]||[];
 
- <!-- TikTok Pixel Code Start -->
-<script>
-!function (w, d, t) {
-  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
-var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
-;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+    ttq.methods=[
+      "page",
+      "track",
+      "identify",
+      "instances",
+      "debug",
+      "on",
+      "off",
+      "once",
+      "ready",
+      "alias",
+      "group",
+      "enableCookie",
+      "disableCookie",
+      "holdConsent",
+      "revokeConsent",
+      "grantConsent"
+    ];
 
+    ttq.setAndDefer=function(t,e){
+      t[e]=function(){
+        t.push([
+          e
+        ].concat(
+          Array.prototype.slice.call(arguments,0)
+        ))
+      }
+    };
 
-  ttq.load('DAONAK3C77U5PB602SN0');
-  ttq.page();
-}(window, document, 'ttq');
-</script>
-<!-- TikTok Pixel Code End -->
+    for(var i=0;i<ttq.methods.length;i++)
+      ttq.setAndDefer(ttq,ttq.methods[i]);
+
+    ttq.instance=function(t){
+      for(
+        var e=ttq._i[t]||[],
+            n=0;
+        n<ttq.methods.length;
+        n++
+      )
+        ttq.setAndDefer(e,ttq.methods[n]);
+
+      return e
+    };
+
+    ttq.load=function(e,n){
+      var r="https://analytics.tiktok.com/i18n/pixel/events.js",
+          o=n&&n.partner;
+
+      ttq._i=ttq._i||{};
+      ttq._i[e]=[];
+      ttq._i[e]._u=r;
+
+      ttq._t=ttq._t||{};
+      ttq._t[e]=+new Date;
+
+      ttq._o=ttq._o||{};
+      ttq._o[e]=n||{};
+
+      n=document.createElement("script");
+      n.type="text/javascript";
+      n.async=!0;
+      n.src=r+"?sdkid="+e+"&lib="+t;
+
+      e=document.getElementsByTagName("script")[0];
+      e.parentNode.insertBefore(n,e)
+    };
+
+    ttq.load('DAOOL8RC77U88MSNVK4G');
+    ttq.page();
+
+  }(window, document, 'ttq');
+  </script>
+  <!-- TikTok Pixel Code End -->
 
 
   <style>
@@ -127,12 +192,7 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
       border-radius: 12px;
       font-weight: 800;
       box-shadow:
-        0 10px 30px rgba(
-          255,
-          40,
-          120,
-          0.22
-        );
+        0 10px 30px rgba(255, 40, 120, 0.22);
       transition:
         transform 0.2s ease,
         box-shadow 0.2s ease;
@@ -140,14 +200,8 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
 
     .button:hover {
       transform: translateY(-2px);
-
       box-shadow:
-        0 14px 35px rgba(
-          255,
-          40,
-          120,
-          0.3
-        );
+        0 14px 35px rgba(255, 40, 120, 0.3);
     }
 
     .button:active {
@@ -183,7 +237,6 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
       border-radius: 16px;
       border: 1px solid #332832;
       background: #18151b;
-
       display: flex;
       align-items: center;
       justify-content: center;
@@ -278,11 +331,7 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
       }
 
       .hero h1 {
-        font-size: clamp(
-          36px,
-          10vw,
-          48px
-        );
+        font-size: clamp(36px, 10vw, 48px);
       }
 
       .subtitle {
@@ -327,27 +376,14 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
 
 <body>
 
-
-  <!-- =====================================================
-       CABEÇALHO
-       ===================================================== -->
-
   <header>
-
     <div class="container">
-
       <div class="logo">
         ✨ NOVIDADES
       </div>
-
     </div>
-
   </header>
 
-
-  <!-- =====================================================
-       HERO
-       ===================================================== -->
 
   <section class="hero">
 
@@ -368,7 +404,6 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
       quando quiser.
     </p>
 
-
     <a
       class="button"
       href="https://t.me/Vivisantsss_bot"
@@ -380,15 +415,7 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
   </section>
 
 
-
-  <!-- =====================================================
-       CONTEÚDO PRINCIPAL
-       ===================================================== -->
-
   <main class="container">
-
-
-    <!-- BLOCO DE ACESSO -->
 
     <div class="teaser">
 
@@ -400,7 +427,6 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
         Veja as informações e opções disponíveis
         no próximo passo.
       </p>
-
 
       <div
         class="locked"
@@ -425,7 +451,6 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
 
       </div>
 
-
       <a
         class="button"
         href="https://t.me/Vivisantsss_bot"
@@ -437,13 +462,7 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
     </div>
 
 
-
-    <!-- =====================================================
-         CARDS
-         ===================================================== -->
-
     <div class="cards">
-
 
       <div class="card">
 
@@ -495,14 +514,8 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
 
       </div>
 
-
     </div>
 
-
-
-    <!-- =====================================================
-         OFERTA / CTA FINAL
-         ===================================================== -->
 
     <div class="offer">
 
@@ -514,7 +527,6 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
         Clique abaixo para continuar.
       </p>
 
-
       <a
         class="button"
         href="https://t.me/Vivisantsss_bot"
@@ -525,26 +537,13 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
 
     </div>
 
-
   </main>
 
 
-
-  <!-- =====================================================
-       RODAPÉ
-       ===================================================== -->
-
   <footer>
-
     © 2026 — Todos os direitos reservados.
-
   </footer>
 
-
-
-  <!-- =====================================================
-       EVENTO DE CLIQUE
-       ===================================================== -->
 
   <script>
 
@@ -567,7 +566,6 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
     }
 
   </script>
-
 
 </body>
 
