@@ -1,558 +1,76 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- TikTok Pixel Code Start -->
+<script>
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;
+  var ttq=w[t]=w[t]||[];
 
-  <meta
-    name="description"
-    content="Conheça novidades, atualizações e conteúdos disponíveis."
-  >
+  ttq.methods=[
+    "page",
+    "track",
+    "identify",
+    "instances",
+    "debug",
+    "on",
+    "off",
+    "once",
+    "ready",
+    "alias",
+    "group",
+    "enableCookie",
+    "disableCookie",
+    "holdConsent",
+    "revokeConsent",
+    "grantConsent"
+  ];
 
-  <meta name="theme-color" content="#09090d">
-
-  <title>Conheça as novidades</title>
-
-  <!-- =========================
-       TIKTOK PIXEL
-  ========================== -->
-  <script>
-    !function (w, d, t) {
-      w.TiktokAnalyticsObject = t;
-
-      var ttq = w[t] = w[t] || [];
-
-      ttq.methods = [
-        "page",
-        "track",
-        "identify",
-        "instances",
-        "debug",
-        "on",
-        "off",
-        "once",
-        "ready",
-        "alias",
-        "group",
-        "enableCookie",
-        "disableCookie",
-        "holdConsent",
-        "revokeConsent",
-        "grantConsent"
-      ];
-
-      ttq.setAndDefer = function (t, e) {
-        t[e] = function () {
-          t.push([
-            e,
-            ...Array.prototype.slice.call(arguments, 0)
-          ]);
-        };
-      };
-
-      for (var i = 0; i < ttq.methods.length; i++) {
-        ttq.setAndDefer(ttq, ttq.methods[i]);
-      }
-
-      ttq.instance = function (t) {
-        for (
-          var e = ttq._i[t] || [],
-              n = 0;
-          n < ttq.methods.length;
-          n++
-        ) {
-          ttq.setAndDefer(e, ttq.methods[n]);
-        }
-
-        return e;
-      };
-
-      ttq.load = function (e, n) {
-        var r =
-          "https://analytics.tiktok.com/i18n/pixel/events.js";
-
-        ttq._i = ttq._i || {};
-        ttq._i[e] = [];
-        ttq._i[e]._u = r;
-
-        ttq._t = ttq._t || {};
-        ttq._t[e] = +new Date;
-
-        ttq._o = ttq._o || {};
-        ttq._o[e] = n || {};
-
-        n = document.createElement("script");
-        n.type = "text/javascript";
-        n.async = true;
-        n.src = r + "?sdkid=" + e + "&lib=" + t;
-
-        e = document.getElementsByTagName("script")[0];
-        e.parentNode.insertBefore(n, e);
-      };
-
-      /* NOVO PIXEL */
-      ttq.load("DAO81ABC77UFPTFVTMQG");
-      ttq.page();
-
-    }(window, document, "ttq");
-  </script>
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+  ttq.setAndDefer=function(t,e){
+    t[e]=function(){
+      t.push([e].concat(Array.prototype.slice.call(arguments,0)))
     }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #09090d;
-      color: #ffffff;
-      line-height: 1.5;
-      min-height: 100vh;
-    }
-
-    a {
-      -webkit-tap-highlight-color: transparent;
-    }
-
-    header {
-      padding: 18px 20px;
-      border-bottom: 1px solid #222222;
-      background: rgba(9, 9, 13, 0.92);
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-    }
-
-    .container {
-      width: 100%;
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    .logo {
-      color: #ff3b81;
-      font-size: 24px;
-      font-weight: 800;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 60px 20px 65px;
-    }
-
-    .tag {
-      display: inline-block;
-      color: #ff72a8;
-      background: #24121b;
-      border: 1px solid #5a2039;
-      padding: 8px 15px;
-      border-radius: 30px;
-      margin-bottom: 20px;
-      font-size: 14px;
-      font-weight: 700;
-    }
-
-    .hero h1 {
-      font-size: clamp(38px, 7vw, 58px);
-      line-height: 1.06;
-      margin-bottom: 18px;
-    }
-
-    .hero h1 span {
-      color: #ff3b81;
-    }
-
-    .subtitle {
-      max-width: 650px;
-      margin: 0 auto;
-      color: #bdbdc5;
-      font-size: 18px;
-      line-height: 1.6;
-    }
-
-    .button {
-      display: inline-block;
-      margin-top: 26px;
-      padding: 17px 32px;
-      background: linear-gradient(
-        135deg,
-        #ff2878,
-        #ff4f95
-      );
-      color: #ffffff;
-      text-decoration: none;
-      border-radius: 12px;
-      font-weight: 800;
-      box-shadow:
-        0 10px 30px rgba(255, 40, 120, 0.22);
-      transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
-    }
-
-    .button:hover {
-      transform: translateY(-2px);
-      box-shadow:
-        0 14px 35px rgba(255, 40, 120, 0.3);
-    }
-
-    .button:active {
-      transform: translateY(0);
-    }
-
-    .teaser {
-      max-width: 760px;
-      margin: 0 auto 65px;
-      text-align: center;
-      background: #121218;
-      border: 1px solid #30202a;
-      border-radius: 22px;
-      padding: 30px 20px;
-    }
-
-    .teaser h2 {
-      font-size: 30px;
-      margin-bottom: 8px;
-    }
-
-    .teaser p {
-      color: #aaaaaa;
-      margin-bottom: 22px;
-    }
-
-    .locked {
-      position: relative;
-      max-width: 500px;
-      height: 210px;
-      margin: 0 auto;
-      overflow: hidden;
-      border-radius: 16px;
-      border: 1px solid #332832;
-      background: #18151b;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .lock-overlay {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      text-align: center;
-    }
-
-    .lock-icon {
-      font-size: 42px;
-      margin-bottom: 8px;
-    }
-
-    .lock-overlay strong {
-      font-size: 19px;
-    }
-
-    .lock-overlay span {
-      color: #dddddd;
-      font-size: 14px;
-      margin-top: 4px;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-      margin-bottom: 65px;
-    }
-
-    .card {
-      background: #15151b;
-      border: 1px solid #292932;
-      border-radius: 15px;
-      padding: 28px;
-      text-align: center;
-    }
-
-    .icon {
-      font-size: 38px;
-      margin-bottom: 12px;
-    }
-
-    .card h2 {
-      margin-bottom: 8px;
-      font-size: 21px;
-    }
-
-    .card p {
-      color: #aaaaaa;
-    }
-
-    .offer {
-      text-align: center;
-      background: linear-gradient(
-        180deg,
-        #191018,
-        #121015
-      );
-      border: 1px solid #38202d;
-      border-radius: 20px;
-      padding: 45px 20px;
-      margin-bottom: 65px;
-    }
-
-    .offer h2 {
-      font-size: 32px;
-      margin-bottom: 10px;
-    }
-
-    .offer p {
-      color: #bbbbbb;
-    }
-
-    footer {
-      text-align: center;
-      color: #777777;
-      padding: 25px;
-      border-top: 1px solid #222222;
-      font-size: 13px;
-    }
-
-    @media (max-width: 700px) {
-
-      .hero {
-        padding: 40px 15px 45px;
-      }
-
-      .hero h1 {
-        font-size: clamp(36px, 10vw, 48px);
-      }
-
-      .subtitle {
-        font-size: 16px;
-      }
-
-      .button {
-        width: 100%;
-        max-width: 360px;
-        padding: 16px 20px;
-      }
-
-      .cards {
-        grid-template-columns: 1fr;
-      }
-
-      .teaser {
-        padding: 24px 15px;
-      }
-
-      .teaser h2 {
-        font-size: 26px;
-      }
-
-      .locked {
-        height: 180px;
-      }
-
-      .offer {
-        padding: 35px 18px;
-      }
-
-      .offer h2 {
-        font-size: 27px;
-      }
-    }
-  </style>
-</head>
-
-<body>
-
-  <header>
-    <div class="container">
-      <div class="logo">
-        ✨ NOVIDADES
-      </div>
-    </div>
-  </header>
-
-  <section class="hero">
-
-    <div class="tag">
-      ✨ Novidades e atualizações
-    </div>
-
-    <h1>
-      Confira as novidades<br>
-      <span>e veja o que está disponível.</span>
-    </h1>
-
-    <p class="subtitle">
-      Algumas novidades ficam disponíveis somente no
-      acesso completo. Confira as opções e continue
-      quando quiser.
-    </p>
-
-    <a
-      class="button"
-      href="https://t.me/Vivisantsss_bot"
-      onclick="registrarClique('hero');"
-    >
-      ACESSAR AGORA →
-    </a>
-
-  </section>
-
-  <main class="container">
-
-    <div class="teaser">
-
-      <h2>
-        Confira as novidades
-      </h2>
-
-      <p>
-        Veja as informações e opções disponíveis no próximo passo.
-      </p>
-
-      <div
-        class="locked"
-        aria-label="Informações adicionais"
-      >
-
-        <div class="lock-overlay">
-
-          <div class="lock-icon">
-            ℹ️
-          </div>
-
-          <strong>
-            Informações adicionais
-          </strong>
-
-          <span>
-            Clique abaixo para conhecer os detalhes
-          </span>
-
-        </div>
-
-      </div>
-
-      <a
-        class="button"
-        href="https://t.me/Vivisantsss_bot"
-        onclick="registrarClique('teaser');"
-      >
-        CONHECER DETALHES →
-      </a>
-
-    </div>
-
-    <div class="cards">
-
-      <div class="card">
-
-        <div class="icon">
-          📸
-        </div>
-
-        <h2>
-          Fotos
-        </h2>
-
-        <p>
-          Novidades e atualizações disponíveis.
-        </p>
-
-      </div>
-
-      <div class="card">
-
-        <div class="icon">
-          🎥
-        </div>
-
-        <h2>
-          Vídeos
-        </h2>
-
-        <p>
-          Veja as opções disponíveis.
-        </p>
-
-      </div>
-
-      <div class="card">
-
-        <div class="icon">
-          💬
-        </div>
-
-        <h2>
-          Conteúdo exclusivo
-        </h2>
-
-        <p>
-          Tudo organizado em um só lugar.
-        </p>
-
-      </div>
-
-    </div>
-
-    <div class="offer">
-
-      <h2>
-        Quer conferir?
-      </h2>
-
-      <p>
-        Clique abaixo para continuar.
-      </p>
-
-      <a
-        class="button"
-        href="https://t.me/Vivisantsss_bot"
-        onclick="registrarClique('final');"
-      >
-        ACESSAR AGORA →
-      </a>
-
-    </div>
-
-  </main>
-
-  <footer>
-    © 2026 — Todos os direitos reservados.
-  </footer>
-
-  <script>
-
-    function registrarClique(local) {
-
-      if (
-        typeof ttq !== "undefined" &&
-        typeof ttq.track === "function"
-      ) {
-
-        ttq.track(
-          "ClickButton",
-          {
-            button_location: local
-          }
-        );
-
-      }
-
-    }
-
-  </script>
-
-</body>
-</html>
+  };
+
+  for(var i=0;i<ttq.methods.length;i++)
+    ttq.setAndDefer(ttq,ttq.methods[i]);
+
+  ttq.instance=function(t){
+    for(
+      var e=ttq._i[t]||[],
+          n=0;
+      n<ttq.methods.length;
+      n++
+    )
+      ttq.setAndDefer(e,ttq.methods[n]);
+
+    return e
+  };
+
+  ttq.load=function(e,n){
+    var r="https://analytics.tiktok.com/i18n/pixel/events.js",
+        o=n&&n.partner;
+
+    ttq._i=ttq._i||{};
+    ttq._i[e]=[];
+    ttq._i[e]._u=r;
+
+    ttq._t=ttq._t||{};
+    ttq._t[e]=+new Date;
+
+    ttq._o=ttq._o||{};
+    ttq._o[e]=n||{};
+
+    n=document.createElement("script");
+    n.type="text/javascript";
+    n.async=!0;
+    n.src=r+"?sdkid="+e+"&lib="+t;
+
+    e=document.getElementsByTagName("script")[0];
+    e.parentNode.insertBefore(n,e)
+  };
+
+  /* PIXEL CORRETO */
+  ttq.load("DAONAK3C77U5PB602SN0");
+  ttq.page();
+
+}(window, document, "ttq");
+</script>
+<!-- TikTok Pixel Code End -->
