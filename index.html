@@ -1,101 +1,31 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>30 Formas de Usar IA para Criar Renda Extra</title>
 
   <meta
     name="description"
-    content="Conheça novidades, atualizações e conteúdos disponíveis."
+    content="Descubra 30 formas práticas de explorar a Inteligência Artificial e transformar ideias em novas possibilidades de renda extra."
   >
 
-  <meta name="theme-color" content="#09090d">
+  <meta name="theme-color" content="#6d4aff">
 
-  <title>Conheça as novidades</title>
-
-  <!-- TikTok Pixel Code Start -->
-  <script>
-  !function (w, d, t) {
-    w.TiktokAnalyticsObject=t;
-    var ttq=w[t]=w[t]||[];
-
-    ttq.methods=[
-      "page",
-      "track",
-      "identify",
-      "instances",
-      "debug",
-      "on",
-      "off",
-      "once",
-      "ready",
-      "alias",
-      "group",
-      "enableCookie",
-      "disableCookie",
-      "holdConsent",
-      "revokeConsent",
-      "grantConsent"
-    ];
-
-    ttq.setAndDefer=function(t,e){
-      t[e]=function(){
-        t.push([
-          e
-        ].concat(
-          Array.prototype.slice.call(arguments,0)
-        ))
-      }
-    };
-
-    for(var i=0;i<ttq.methods.length;i++)
-      ttq.setAndDefer(ttq,ttq.methods[i]);
-
-    ttq.instance=function(t){
-      for(
-        var e=ttq._i[t]||[],
-            n=0;
-        n<ttq.methods.length;
-        n++
-      )
-        ttq.setAndDefer(e,ttq.methods[n]);
-
-      return e
-    };
-
-    ttq.load=function(e,n){
-      var r="https://analytics.tiktok.com/i18n/pixel/events.js",
-          o=n&&n.partner;
-
-      ttq._i=ttq._i||{};
-      ttq._i[e]=[];
-      ttq._i[e]._u=r;
-
-      ttq._t=ttq._t||{};
-      ttq._t[e]=+new Date;
-
-      ttq._o=ttq._o||{};
-      ttq._o[e]=n||{};
-
-      n=document.createElement("script");
-      n.type="text/javascript";
-      n.async=!0;
-      n.src=r+"?sdkid="+e+"&lib="+t;
-
-      e=document.getElementsByTagName("script")[0];
-      e.parentNode.insertBefore(n,e)
-    };
-
-    ttq.load('DAOOL8RC77U88MSNVK4G');
-    ttq.page();
-
-  }(window, document, 'ttq');
-  </script>
-  <!-- TikTok Pixel Code End -->
+  <!-- =========================================================
+       PIXEL / ANALYTICS
+       COLE SEU CÓDIGO DE RASTREAMENTO AQUI
+       ========================================================= -->
 
 
   <style>
+
+    /* =========================================================
+       RESET
+       ========================================================= */
 
     * {
       margin: 0;
@@ -108,465 +38,2378 @@
     }
 
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #09090d;
-      color: #ffffff;
-      line-height: 1.5;
-      min-height: 100vh;
+      font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif;
+
+      background: #ffffff;
+      color: #151522;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    button,
+    a {
+      font-family: inherit;
     }
 
     a {
-      -webkit-tap-highlight-color: transparent;
-    }
-
-    header {
-      padding: 18px 20px;
-      border-bottom: 1px solid #222222;
-      background: rgba(9, 9, 13, 0.92);
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
+      text-decoration: none;
     }
 
     .container {
-      width: 100%;
-      max-width: 1000px;
+      width: min(1120px, calc(100% - 40px));
       margin: 0 auto;
-      padding: 20px;
+    }
+
+
+    /* =========================================================
+       TOP BAR
+       ========================================================= */
+
+    .topbar {
+      background: linear-gradient(
+        90deg,
+        #5b35e8,
+        #784cff,
+        #5b35e8
+      );
+
+      color: white;
+      text-align: center;
+      padding: 10px 15px;
+
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .5px;
+    }
+
+
+    /* =========================================================
+       HEADER
+       ========================================================= */
+
+    header {
+      background: rgba(255,255,255,.94);
+      border-bottom: 1px solid #eeeeF5;
+
+      position: sticky;
+      top: 0;
+      z-index: 100;
+
+      backdrop-filter: blur(15px);
+    }
+
+    .nav {
+      height: 72px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
 
     .logo {
-      color: #ff3b81;
-      font-size: 24px;
-      font-weight: 800;
+      font-size: 20px;
+      font-weight: 900;
+      color: #17131f;
     }
+
+    .logo span {
+      color: #7046f7;
+    }
+
+    .nav-button {
+      color: white;
+      background: #17131f;
+
+      padding: 11px 20px;
+      border-radius: 999px;
+
+      font-size: 14px;
+      font-weight: 800;
+
+      transition: .25s;
+    }
+
+    .nav-button:hover {
+      transform: translateY(-2px);
+      background: #7046f7;
+    }
+
+
+    /* =========================================================
+       HERO
+       ========================================================= */
 
     .hero {
-      text-align: center;
-      padding: 60px 20px 65px;
+      position: relative;
+      overflow: hidden;
+
+      padding: 90px 0 100px;
+
+      background:
+        radial-gradient(
+          circle at 10% 20%,
+          rgba(112,70,247,.12),
+          transparent 30%
+        ),
+        radial-gradient(
+          circle at 90% 30%,
+          rgba(74,128,255,.12),
+          transparent 30%
+        ),
+        #ffffff;
     }
 
-    .tag {
-      display: inline-block;
-      color: #ff72a8;
-      background: #24121b;
-      border: 1px solid #5a2039;
-      padding: 8px 15px;
-      border-radius: 30px;
+    .hero-grid {
+      display: grid;
+
+      grid-template-columns:
+        1.05fr
+        .95fr;
+
+      align-items: center;
+
+      gap: 70px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+
+      padding: 8px 13px;
+
+      background: #f0ecff;
+      color: #6240db;
+
+      border-radius: 999px;
+
+      font-size: 12px;
+      font-weight: 900;
+
       margin-bottom: 20px;
-      font-size: 14px;
-      font-weight: 700;
+    }
+
+    .eyebrow::before {
+      content: "✦";
     }
 
     .hero h1 {
-      font-size: clamp(38px, 7vw, 58px);
-      line-height: 1.06;
-      margin-bottom: 18px;
-    }
+      font-size: clamp(42px, 6vw, 68px);
 
-    .hero h1 span {
-      color: #ff3b81;
-    }
+      line-height: 1.02;
 
-    .subtitle {
-      max-width: 650px;
-      margin: 0 auto;
-      color: #bdbdc5;
-      font-size: 18px;
-      line-height: 1.6;
-    }
+      letter-spacing: -2.8px;
 
-    .button {
-      display: inline-block;
-      margin-top: 26px;
-      padding: 17px 32px;
-      background: linear-gradient(
-        135deg,
-        #ff2878,
-        #ff4f95
-      );
-      color: #ffffff;
-      text-decoration: none;
-      border-radius: 12px;
-      font-weight: 800;
-      box-shadow:
-        0 10px 30px rgba(255, 40, 120, 0.22);
-      transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
-    }
+      font-weight: 950;
 
-    .button:hover {
-      transform: translateY(-2px);
-      box-shadow:
-        0 14px 35px rgba(255, 40, 120, 0.3);
-    }
+      max-width: 700px;
 
-    .button:active {
-      transform: translateY(0);
-    }
-
-    .teaser {
-      max-width: 760px;
-      margin: 0 auto 65px;
-      text-align: center;
-      background: #121218;
-      border: 1px solid #30202a;
-      border-radius: 22px;
-      padding: 30px 20px;
-    }
-
-    .teaser h2 {
-      font-size: 30px;
-      margin-bottom: 8px;
-    }
-
-    .teaser p {
-      color: #aaaaaa;
       margin-bottom: 22px;
     }
 
-    .locked {
+    .gradient-text {
+      background:
+        linear-gradient(
+          90deg,
+          #633df0,
+          #9369ff,
+          #347cff
+        );
+
+      -webkit-background-clip: text;
+      background-clip: text;
+
+      color: transparent;
+    }
+
+    .hero-description {
+      color: #626273;
+
+      font-size: 19px;
+
+      max-width: 620px;
+
+      margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      align-items: center;
+
+      gap: 15px;
+
+      flex-wrap: wrap;
+    }
+
+    .primary-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      min-height: 58px;
+
+      padding: 0 27px;
+
+      border-radius: 14px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #7046f7,
+          #4b78ff
+        );
+
+      color: white;
+
+      font-size: 16px;
+      font-weight: 900;
+
+      box-shadow:
+        0 15px 35px rgba(92,68,230,.25);
+
+      transition:
+        transform .25s,
+        box-shadow .25s;
+    }
+
+    .primary-button:hover {
+      transform: translateY(-3px);
+
+      box-shadow:
+        0 20px 40px rgba(92,68,230,.35);
+    }
+
+    .secondary-button {
+      min-height: 58px;
+
+      padding: 0 23px;
+
+      border-radius: 14px;
+
+      border: 1px solid #e3e3eb;
+
+      color: #272734;
+
+      font-weight: 800;
+
+      background: white;
+
+      transition: .25s;
+    }
+
+    .secondary-button:hover {
+      border-color: #7046f7;
+      color: #7046f7;
+    }
+
+    .mini-info {
+      display: flex;
+      gap: 18px;
+
+      margin-top: 20px;
+
+      color: #777786;
+
+      font-size: 13px;
+    }
+
+
+    /* =========================================================
+       EBOOK MOCKUP
+       ========================================================= */
+
+    .book-area {
       position: relative;
-      max-width: 500px;
-      height: 210px;
-      margin: 0 auto;
-      overflow: hidden;
-      border-radius: 16px;
-      border: 1px solid #332832;
-      background: #18151b;
+
+      min-height: 540px;
+
       display: flex;
       align-items: center;
       justify-content: center;
     }
 
-    .lock-overlay {
+    .glow {
+      position: absolute;
+
+      width: 370px;
+      height: 370px;
+
+      background:
+        radial-gradient(
+          circle,
+          rgba(112,70,247,.22),
+          transparent 68%
+        );
+
+      filter: blur(10px);
+    }
+
+    .book {
+      position: relative;
+
+      width: 320px;
+      min-height: 430px;
+
+      border-radius: 7px 18px 18px 7px;
+
+      overflow: hidden;
+
+      background:
+        linear-gradient(
+          145deg,
+          #17132d,
+          #3b2787 48%,
+          #6f49f5
+        );
+
+      box-shadow:
+        -18px 20px 0 rgba(32,20,83,.08),
+        0 35px 70px rgba(35,25,82,.28);
+
+      transform:
+        perspective(1200px)
+        rotateY(-12deg)
+        rotateX(2deg);
+
+      transition: .5s;
+
+      z-index: 2;
+    }
+
+    .book:hover {
+      transform:
+        perspective(1200px)
+        rotateY(-4deg)
+        rotateX(1deg)
+        translateY(-8px);
+    }
+
+    .book::before {
+      content: "";
+
+      position: absolute;
+
+      left: 17px;
+      top: 0;
+      bottom: 0;
+
+      width: 2px;
+
+      background: rgba(255,255,255,.12);
+    }
+
+    .book-content {
+      padding: 45px 35px;
+
+      color: white;
+
+      height: 100%;
+
       display: flex;
-      align-items: center;
-      justify-content: center;
       flex-direction: column;
+      justify-content: space-between;
+
+      min-height: 430px;
+    }
+
+    .book-small {
+      font-size: 12px;
+
+      letter-spacing: 2px;
+
+      font-weight: 900;
+
+      opacity: .8;
+    }
+
+    .book h2 {
+      font-size: 39px;
+
+      line-height: 1.03;
+
+      letter-spacing: -1.5px;
+
+      margin: 20px 0;
+    }
+
+    .book h2 span {
+      color: #bca9ff;
+    }
+
+    .book-bottom {
+      border-top: 1px solid rgba(255,255,255,.18);
+
+      padding-top: 20px;
+
+      font-size: 13px;
+
+      opacity: .85;
+    }
+
+    .ai-orb {
+      position: absolute;
+
+      width: 80px;
+      height: 80px;
+
+      border-radius: 50%;
+
+      background:
+        radial-gradient(
+          circle at 35% 30%,
+          #ffffff,
+          #bdaaff 20%,
+          #7046f7 50%,
+          #24154f
+        );
+
+      right: -15px;
+      top: 50px;
+
+      box-shadow:
+        0 0 40px rgba(111,70,247,.55);
+
+      animation: float 4s ease-in-out infinite;
+    }
+
+    .floating-card {
+      position: absolute;
+
+      z-index: 4;
+
+      background: white;
+
+      padding: 14px 18px;
+
+      border-radius: 14px;
+
+      box-shadow:
+        0 15px 45px rgba(25,20,50,.12);
+
+      font-size: 13px;
+
+      font-weight: 800;
+
+      animation: float 4s ease-in-out infinite;
+    }
+
+    .floating-card.one {
+      left: 10px;
+      top: 110px;
+    }
+
+    .floating-card.two {
+      right: -5px;
+      bottom: 80px;
+
+      animation-delay: 1.3s;
+    }
+
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+
+    /* =========================================================
+       TRUST
+       ========================================================= */
+
+    .trust {
+      border-top: 1px solid #eeeeF4;
+      border-bottom: 1px solid #eeeeF4;
+
+      padding: 18px 0;
+
+      background: #fafafd;
+    }
+
+    .trust-content {
+      display: flex;
+
+      justify-content: center;
+
+      gap: 35px;
+
+      flex-wrap: wrap;
+
+      color: #6d6d7c;
+
+      font-size: 13px;
+
+      font-weight: 700;
+    }
+
+
+    /* =========================================================
+       GENERAL SECTION
+       ========================================================= */
+
+    section {
+      padding: 100px 0;
+    }
+
+    .section-heading {
+      max-width: 700px;
+
+      margin: 0 auto 50px;
+
       text-align: center;
     }
 
-    .lock-icon {
-      font-size: 42px;
-      margin-bottom: 8px;
+    .section-heading span {
+      color: #7046f7;
+
+      font-size: 13px;
+
+      font-weight: 900;
+
+      letter-spacing: 1px;
+
+      text-transform: uppercase;
     }
 
-    .lock-overlay strong {
-      font-size: 19px;
+    .section-heading h2 {
+      font-size: clamp(32px, 5vw, 48px);
+
+      line-height: 1.1;
+
+      letter-spacing: -1.8px;
+
+      margin: 10px 0 16px;
     }
 
-    .lock-overlay span {
-      color: #dddddd;
-      font-size: 14px;
-      margin-top: 4px;
+    .section-heading p {
+      color: #6d6d7c;
+
+      font-size: 17px;
+    }
+
+
+    /* =========================================================
+       PROBLEM
+       ========================================================= */
+
+    .problem {
+      background: #fafafd;
     }
 
     .cards {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
       gap: 20px;
-      margin-bottom: 65px;
     }
 
     .card {
-      background: #15151b;
-      border: 1px solid #292932;
-      border-radius: 15px;
-      padding: 28px;
-      text-align: center;
+      background: white;
+
+      border: 1px solid #ededf3;
+
+      border-radius: 20px;
+
+      padding: 30px;
+
+      box-shadow:
+        0 12px 35px rgba(25,20,50,.04);
+
+      transition: .25s;
     }
 
-    .icon {
-      font-size: 38px;
-      margin-bottom: 12px;
+    .card:hover {
+      transform: translateY(-5px);
+
+      box-shadow:
+        0 20px 45px rgba(25,20,50,.08);
     }
 
-    .card h2 {
+    .card-icon {
+      width: 48px;
+      height: 48px;
+
+      display: grid;
+      place-items: center;
+
+      border-radius: 14px;
+
+      background: #f0ecff;
+
+      color: #7046f7;
+
+      font-size: 22px;
+
+      margin-bottom: 20px;
+    }
+
+    .card h3 {
+      font-size: 19px;
+
       margin-bottom: 8px;
-      font-size: 21px;
     }
 
     .card p {
-      color: #aaaaaa;
+      color: #71717e;
+
+      font-size: 14px;
     }
+
+
+    /* =========================================================
+       CONTENT
+       ========================================================= */
+
+    .content-grid {
+      display: grid;
+
+      grid-template-columns:
+        1fr
+        1fr;
+
+      gap: 60px;
+
+      align-items: center;
+    }
+
+    .content-image {
+      min-height: 470px;
+
+      border-radius: 28px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #161229,
+          #4930a0
+        );
+
+      padding: 35px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      overflow: hidden;
+
+      position: relative;
+    }
+
+    .content-image::before,
+    .content-image::after {
+      content: "";
+
+      position: absolute;
+
+      border-radius: 50%;
+
+      filter: blur(5px);
+    }
+
+    .content-image::before {
+      width: 250px;
+      height: 250px;
+
+      background: rgba(125,90,255,.4);
+
+      top: -80px;
+      right: -80px;
+    }
+
+    .content-image::after {
+      width: 220px;
+      height: 220px;
+
+      background: rgba(67,129,255,.35);
+
+      bottom: -80px;
+      left: -80px;
+    }
+
+    .mini-book {
+      width: 260px;
+      min-height: 350px;
+
+      border-radius: 5px 15px 15px 5px;
+
+      background:
+        linear-gradient(
+          145deg,
+          #30205e,
+          #714cff
+        );
+
+      color: white;
+
+      padding: 35px 28px;
+
+      box-shadow:
+        0 30px 60px rgba(0,0,0,.25);
+
+      transform:
+        rotate(-5deg);
+
+      z-index: 2;
+    }
+
+    .mini-book h3 {
+      font-size: 31px;
+
+      line-height: 1.05;
+
+      margin-top: 30px;
+    }
+
+    .mini-book small {
+      opacity: .75;
+
+      letter-spacing: 1px;
+    }
+
+    .check-list {
+      list-style: none;
+
+      display: grid;
+
+      gap: 17px;
+
+      margin-top: 30px;
+    }
+
+    .check-list li {
+      display: flex;
+
+      gap: 12px;
+
+      align-items: flex-start;
+
+      color: #484856;
+
+      font-size: 15px;
+    }
+
+    .check {
+      width: 23px;
+      height: 23px;
+
+      min-width: 23px;
+
+      border-radius: 50%;
+
+      display: grid;
+
+      place-items: center;
+
+      background: #eee9ff;
+
+      color: #7046f7;
+
+      font-size: 13px;
+
+      font-weight: 900;
+    }
+
+
+    /* =========================================================
+       TOPICS
+       ========================================================= */
+
+    .topics {
+      background: #fafafd;
+    }
+
+    .topic-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 15px;
+    }
+
+    .topic {
+      padding: 22px;
+
+      border-radius: 16px;
+
+      background: white;
+
+      border: 1px solid #eeeeF3;
+
+      font-weight: 800;
+
+      color: #30303c;
+    }
+
+    .topic span {
+      display: block;
+
+      color: #7046f7;
+
+      font-size: 12px;
+
+      margin-bottom: 5px;
+    }
+
+
+    /* =========================================================
+       HIGHLIGHT
+       ========================================================= */
+
+    .highlight {
+      padding: 0 0 100px;
+    }
+
+    .highlight-box {
+      border-radius: 30px;
+
+      padding: 70px 40px;
+
+      text-align: center;
+
+      color: white;
+
+      background:
+        radial-gradient(
+          circle at 20% 20%,
+          rgba(255,255,255,.15),
+          transparent 30%
+        ),
+        linear-gradient(
+          135deg,
+          #17122d,
+          #4c31a7,
+          #315bc2
+        );
+
+      position: relative;
+
+      overflow: hidden;
+    }
+
+    .highlight-box h2 {
+      font-size: clamp(35px, 5vw, 58px);
+
+      line-height: 1;
+
+      letter-spacing: -2px;
+
+      margin: 10px auto 20px;
+
+      max-width: 750px;
+    }
+
+    .highlight-box p {
+      color: rgba(255,255,255,.78);
+
+      max-width: 620px;
+
+      margin: 0 auto 30px;
+    }
+
+    .white-button {
+      display: inline-flex;
+
+      min-height: 56px;
+
+      align-items: center;
+
+      justify-content: center;
+
+      padding: 0 27px;
+
+      border-radius: 14px;
+
+      background: white;
+
+      color: #332075;
+
+      font-weight: 900;
+
+      transition: .25s;
+    }
+
+    .white-button:hover {
+      transform: translateY(-3px);
+
+      box-shadow:
+        0 15px 30px rgba(0,0,0,.2);
+    }
+
+
+    /* =========================================================
+       FOR WHO
+       ========================================================= */
+
+    .audience-grid {
+      display: grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap: 20px;
+    }
+
+    .audience-item {
+      display: flex;
+
+      align-items: center;
+
+      gap: 15px;
+
+      padding: 22px;
+
+      background: #fafafd;
+
+      border: 1px solid #eeeeF4;
+
+      border-radius: 16px;
+
+      font-weight: 700;
+    }
+
+
+    /* =========================================================
+       OFFER
+       ========================================================= */
 
     .offer {
+      background: #fafafd;
+    }
+
+    .offer-card {
+      width: min(650px, 100%);
+
+      margin: auto;
+
+      background: white;
+
+      border: 1px solid #e7e5f0;
+
+      border-radius: 28px;
+
+      padding: 45px;
+
       text-align: center;
-      background: linear-gradient(
-        180deg,
-        #191018,
-        #121015
-      );
-      border: 1px solid #38202d;
-      border-radius: 20px;
-      padding: 45px 20px;
-      margin-bottom: 65px;
+
+      box-shadow:
+        0 25px 70px rgba(32,20,70,.09);
     }
 
-    .offer h2 {
+    .offer-label {
+      display: inline-block;
+
+      padding: 7px 12px;
+
+      background: #f0ecff;
+
+      color: #6741dc;
+
+      border-radius: 999px;
+
+      font-size: 11px;
+
+      font-weight: 900;
+
+      text-transform: uppercase;
+    }
+
+    .offer-card h2 {
       font-size: 32px;
-      margin-bottom: 10px;
+
+      margin: 18px 0 8px;
     }
 
-    .offer p {
-      color: #bbbbbb;
+    .offer-card > p {
+      color: #71717d;
     }
+
+    .old-price {
+      margin-top: 25px;
+
+      color: #9797a4;
+
+      text-decoration: line-through;
+
+      font-size: 16px;
+    }
+
+    .price {
+      font-size: 54px;
+
+      line-height: 1;
+
+      font-weight: 950;
+
+      letter-spacing: -2px;
+
+      margin: 5px 0 10px;
+
+      color: #17131f;
+    }
+
+    .price small {
+      font-size: 19px;
+
+      letter-spacing: 0;
+    }
+
+    .offer-note {
+      color: #777785;
+
+      font-size: 12px;
+
+      margin-top: 14px;
+    }
+
+    .offer-button {
+      width: 100%;
+
+      border: 0;
+
+      cursor: pointer;
+
+      margin-top: 25px;
+    }
+
+
+    /* =========================================================
+       FAQ
+       ========================================================= */
+
+    .faq {
+      max-width: 800px;
+
+      margin: auto;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid #e9e9ef;
+    }
+
+    .faq-question {
+      width: 100%;
+
+      border: 0;
+
+      background: transparent;
+
+      padding: 23px 0;
+
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: center;
+
+      cursor: pointer;
+
+      text-align: left;
+
+      font-size: 16px;
+
+      font-weight: 850;
+
+      color: #22222d;
+    }
+
+    .faq-question span:last-child {
+      font-size: 24px;
+
+      color: #7046f7;
+
+      transition: .25s;
+    }
+
+    .faq-answer {
+      max-height: 0;
+
+      overflow: hidden;
+
+      transition: max-height .3s ease;
+
+      color: #70707d;
+
+      font-size: 14px;
+    }
+
+    .faq-answer p {
+      padding-bottom: 22px;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 200px;
+    }
+
+    .faq-item.active .faq-question span:last-child {
+      transform: rotate(45deg);
+    }
+
+
+    /* =========================================================
+       FINAL CTA
+       ========================================================= */
+
+    .final-cta {
+      padding-top: 20px;
+    }
+
+    .final-box {
+      text-align: center;
+
+      padding: 80px 25px;
+
+      border-radius: 28px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #f2efff,
+          #eef5ff
+        );
+    }
+
+    .final-box h2 {
+      font-size: clamp(32px, 5vw, 48px);
+
+      line-height: 1.05;
+
+      letter-spacing: -1.5px;
+
+      max-width: 650px;
+
+      margin: auto;
+    }
+
+    .final-box p {
+      max-width: 600px;
+
+      margin: 18px auto 28px;
+
+      color: #676776;
+    }
+
+
+    /* =========================================================
+       FOOTER
+       ========================================================= */
 
     footer {
+      padding: 35px 0;
+
+      border-top: 1px solid #eeeeF3;
+
+      color: #858591;
+
+      font-size: 12px;
+
       text-align: center;
-      color: #777777;
-      padding: 25px;
-      border-top: 1px solid #222222;
-      font-size: 13px;
     }
 
-    @media (max-width: 700px) {
+
+    /* =========================================================
+       ANIMAÇÃO DE ENTRADA
+       ========================================================= */
+
+    .reveal {
+      opacity: 0;
+
+      transform: translateY(20px);
+
+      transition:
+        opacity .7s ease,
+        transform .7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+
+      transform: translateY(0);
+    }
+
+
+    /* =========================================================
+       MOBILE
+       ========================================================= */
+
+    @media (max-width: 850px) {
 
       .hero {
-        padding: 40px 15px 45px;
+        padding: 65px 0 70px;
       }
 
-      .hero h1 {
-        font-size: clamp(36px, 10vw, 48px);
+      .hero-grid {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+        text-align: center;
       }
 
-      .subtitle {
-        font-size: 16px;
+      .hero h1,
+      .hero-description {
+        margin-left: auto;
+        margin-right: auto;
       }
 
-      .button {
-        width: 100%;
-        max-width: 360px;
-        padding: 16px 20px;
+      .hero-buttons {
+        justify-content: center;
+      }
+
+      .mini-info {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .book-area {
+        min-height: 470px;
       }
 
       .cards {
         grid-template-columns: 1fr;
       }
 
-      .teaser {
-        padding: 24px 15px;
+      .content-grid {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
       }
 
-      .teaser h2 {
-        font-size: 26px;
+      .topic-grid {
+        grid-template-columns: 1fr 1fr;
       }
 
-      .locked {
-        height: 180px;
+      .audience-grid {
+        grid-template-columns: 1fr;
       }
 
-      .offer {
-        padding: 35px 18px;
+    }
+
+
+    @media (max-width: 560px) {
+
+      .container {
+        width: min(100% - 28px, 1120px);
       }
 
-      .offer h2 {
-        font-size: 27px;
+      .nav {
+        height: 64px;
       }
+
+      .logo {
+        font-size: 17px;
+      }
+
+      .nav-button {
+        padding: 9px 13px;
+
+        font-size: 12px;
+      }
+
+      .hero h1 {
+        font-size: 43px;
+
+        letter-spacing: -2px;
+      }
+
+      .hero-description {
+        font-size: 16px;
+      }
+
+      .primary-button,
+      .secondary-button {
+        width: 100%;
+      }
+
+      .book {
+        width: 270px;
+        min-height: 380px;
+      }
+
+      .book-content {
+        min-height: 380px;
+
+        padding: 35px 28px;
+      }
+
+      .book h2 {
+        font-size: 33px;
+      }
+
+      .floating-card {
+        font-size: 11px;
+      }
+
+      .floating-card.one {
+        left: -5px;
+      }
+
+      .floating-card.two {
+        right: -5px;
+      }
+
+      section {
+        padding: 75px 0;
+      }
+
+      .topic-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .content-image {
+        min-height: 390px;
+      }
+
+      .mini-book {
+        width: 220px;
+
+        min-height: 300px;
+      }
+
+      .offer-card {
+        padding: 30px 20px;
+      }
+
+      .price {
+        font-size: 47px;
+      }
+
+      .highlight-box {
+        padding: 55px 22px;
+      }
+
     }
 
   </style>
-
 </head>
 
 
 <body>
 
+
+  <!-- =========================================================
+       TOPO
+       ========================================================= -->
+
+  <div class="topbar">
+    GUIA PRÁTICO • 30 IDEIAS PARA EXPLORAR A IA
+  </div>
+
+
+  <!-- =========================================================
+       HEADER
+       ========================================================= -->
+
   <header>
-    <div class="container">
+
+    <div class="container nav">
+
       <div class="logo">
-        ✨ NOVIDADES
+        IA<span>+</span> Renda
       </div>
+
+      <a
+        href="#oferta"
+        class="nav-button"
+      >
+        Ver e-book
+      </a>
+
     </div>
+
   </header>
 
 
-  <section class="hero">
+  <!-- =========================================================
+       HERO
+       ========================================================= -->
 
-    <div class="tag">
-      ✨ Novidades e atualizações
-    </div>
+  <main>
 
-    <h1>
-      Confira as novidades<br>
-      <span>
-        e veja o que está disponível.
-      </span>
-    </h1>
+    <section class="hero">
 
-    <p class="subtitle">
-      Algumas novidades ficam disponíveis somente no
-      acesso completo. Confira as opções e continue
-      quando quiser.
-    </p>
-
-    <a
-      class="button"
-      href="https://t.me/Vivisantsss_bot"
-      onclick="registrarClique('hero');"
-    >
-      ACESSAR AGORA →
-    </a>
-
-  </section>
+      <div class="container hero-grid">
 
 
-  <main class="container">
+        <div class="hero-text reveal">
 
-    <div class="teaser">
-
-      <h2>
-        Confira as novidades
-      </h2>
-
-      <p>
-        Veja as informações e opções disponíveis
-        no próximo passo.
-      </p>
-
-      <div
-        class="locked"
-        aria-label="Informações adicionais"
-      >
-
-        <div class="lock-overlay">
-
-          <div class="lock-icon">
-            ℹ️
+          <div class="eyebrow">
+            E-BOOK DIGITAL
           </div>
 
-          <strong>
-            Informações adicionais
-          </strong>
+          <h1>
+            30 Formas de Usar
+            <span class="gradient-text">
+              IA para Criar Renda Extra
+            </span>
+          </h1>
+
+          <p class="hero-description">
+            Descubra maneiras práticas de explorar ferramentas de
+            Inteligência Artificial e transformar ideias em novas
+            possibilidades de renda — mesmo começando do zero.
+          </p>
+
+
+          <div class="hero-buttons">
+
+            <a
+              href="#oferta"
+              class="primary-button"
+            >
+              QUERO CONHECER O E-BOOK →
+            </a>
+
+            <a
+              href="#conteudo"
+              class="secondary-button"
+            >
+              Ver o conteúdo
+            </a>
+
+          </div>
+
+
+          <div class="mini-info">
+
+            <span>✓ Conteúdo digital</span>
+
+            <span>✓ Acesso imediato</span>
+
+            <span>✓ Leitura no celular</span>
+
+          </div>
+
+        </div>
+
+
+        <!-- MOCKUP DO E-BOOK -->
+
+        <div class="book-area reveal">
+
+          <div class="glow"></div>
+
+
+          <div class="floating-card one">
+            ✦ 30 ideias práticas
+          </div>
+
+
+          <div class="book">
+
+            <div class="book-content">
+
+              <div>
+
+                <div class="book-small">
+                  GUIA PRÁTICO
+                </div>
+
+                <h2>
+                  30 FORMAS
+                  <br>
+                  DE USAR
+                  <br>
+                  <span>IA</span>
+                  PARA CRIAR
+                  <br>
+                  RENDA EXTRA
+                </h2>
+
+              </div>
+
+              <div class="book-bottom">
+                Ideias • Ferramentas • Estratégias
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="ai-orb"></div>
+
+
+          <div class="floating-card two">
+            ✦ Inteligência Artificial
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         TRUST
+         ======================================================= -->
+
+    <div class="trust">
+
+      <div class="container trust-content">
+
+        <span>📱 Leia pelo celular</span>
+
+        <span>💻 Computador ou tablet</span>
+
+        <span>⚡ Conteúdo digital</span>
+
+        <span>🧠 Foco em aplicação prática</span>
+
+      </div>
+
+    </div>
+
+
+    <!-- =======================================================
+         PROBLEMA
+         ======================================================= -->
+
+    <section class="problem">
+
+      <div class="container">
+
+        <div class="section-heading reveal">
+
+          <span>O problema</span>
+
+          <h2>
+            Você sabe que a IA está mudando o mercado.
+            Mas ainda não sabe por onde começar?
+          </h2>
+
+          <p>
+            Existem inúmeras ferramentas de Inteligência Artificial,
+            mas conhecer uma ferramenta é diferente de saber como
+            explorá-la na prática.
+          </p>
+
+        </div>
+
+
+        <div class="cards">
+
+
+          <div class="card reveal">
+
+            <div class="card-icon">
+              ?
+            </div>
+
+            <h3>
+              Não sei por onde começar
+            </h3>
+
+            <p>
+              Muitas possibilidades podem acabar deixando você sem
+              saber qual ideia testar primeiro.
+            </p>
+
+          </div>
+
+
+          <div class="card reveal">
+
+            <div class="card-icon">
+              ⏱
+            </div>
+
+            <h3>
+              Tenho pouco tempo
+            </h3>
+
+            <p>
+              Você procura maneiras de usar a tecnologia para
+              economizar tempo e trabalhar de forma mais inteligente.
+            </p>
+
+          </div>
+
+
+          <div class="card reveal">
+
+            <div class="card-icon">
+              ✦
+            </div>
+
+            <h3>
+              Preciso de ideias práticas
+            </h3>
+
+            <p>
+              O objetivo é sair da teoria e descobrir possibilidades
+              que possam ser analisadas e testadas por você.
+            </p>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         CONTEÚDO
+         ======================================================= -->
+
+    <section id="conteudo">
+
+      <div class="container content-grid">
+
+
+        <div class="content-image reveal">
+
+          <div class="mini-book">
+
+            <small>
+              30 FORMAS DE USAR IA
+            </small>
+
+            <h3>
+              Transforme
+              ideias em
+              possibilidades.
+            </h3>
+
+          </div>
+
+        </div>
+
+
+        <div class="reveal">
+
+          <div class="section-heading" style="text-align:left;margin:0 0 25px;">
+
+            <span>
+              Dentro do e-book
+            </span>
+
+            <h2>
+              Um guia para consultar sempre que surgir uma nova ideia.
+            </h2>
+
+            <p>
+              Você encontrará diferentes possibilidades de utilização
+              da Inteligência Artificial em um único material.
+            </p>
+
+          </div>
+
+
+          <ul class="check-list">
+
+            <li>
+              <span class="check">✓</span>
+              Ideias para começar usando IA
+            </li>
+
+            <li>
+              <span class="check">✓</span>
+              Criação de conteúdo
+            </li>
+
+            <li>
+              <span class="check">✓</span>
+              Automação de tarefas
+            </li>
+
+            <li>
+              <span class="check">✓</span>
+              Serviços digitais
+            </li>
+
+            <li>
+              <span class="check">✓</span>
+              Criação de produtos digitais
+            </li>
+
+            <li>
+              <span class="check">✓</span>
+              Marketing e divulgação
+            </li>
+
+            <li>
+              <span class="check">✓</span>
+              Ferramentas de Inteligência Artificial
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         TÓPICOS
+         ======================================================= -->
+
+    <section class="topics">
+
+      <div class="container">
+
+        <div class="section-heading reveal">
 
           <span>
-            Clique abaixo para conhecer os detalhes
+            O que você vai explorar
           </span>
 
+          <h2>
+            30 possibilidades reunidas em um só lugar
+          </h2>
+
+          <p>
+            O material foi pensado para servir como um ponto de partida
+            para quem quer conhecer diferentes usos da IA.
+          </p>
+
+        </div>
+
+
+        <div class="topic-grid">
+
+
+          <div class="topic reveal">
+            <span>01</span>
+            Criação de conteúdo
+          </div>
+
+          <div class="topic reveal">
+            <span>02</span>
+            Assistentes com IA
+          </div>
+
+          <div class="topic reveal">
+            <span>03</span>
+            Design e imagens
+          </div>
+
+          <div class="topic reveal">
+            <span>04</span>
+            Vídeos com IA
+          </div>
+
+          <div class="topic reveal">
+            <span>05</span>
+            Textos e copywriting
+          </div>
+
+          <div class="topic reveal">
+            <span>06</span>
+            Automação
+          </div>
+
+          <div class="topic reveal">
+            <span>07</span>
+            Serviços digitais
+          </div>
+
+          <div class="topic reveal">
+            <span>08</span>
+            Produtos digitais
+          </div>
+
+          <div class="topic reveal">
+            <span>09</span>
+            Marketing
+          </div>
+
+          <div class="topic reveal">
+            <span>10</span>
+            Produtividade
+          </div>
+
+          <div class="topic reveal">
+            <span>11</span>
+            Organização
+          </div>
+
+          <div class="topic reveal">
+            <span>12</span>
+            Novas ideias para testar
+          </div>
+
         </div>
 
       </div>
 
-      <a
-        class="button"
-        href="https://t.me/Vivisantsss_bot"
-        onclick="registrarClique('teaser');"
-      >
-        CONHECER DETALHES →
-      </a>
-
-    </div>
+    </section>
 
 
-    <div class="cards">
+    <!-- =======================================================
+         PARA QUEM É
+         ======================================================= -->
 
-      <div class="card">
+    <section>
 
-        <div class="icon">
-          📸
+      <div class="container">
+
+        <div class="section-heading reveal">
+
+          <span>
+            Para quem é
+          </span>
+
+          <h2>
+            Este e-book pode fazer sentido para você se...
+          </h2>
+
         </div>
 
-        <h2>
-          Fotos
-        </h2>
 
-        <p>
-          Novidades e atualizações disponíveis.
-        </p>
+        <div class="audience-grid">
+
+
+          <div class="audience-item reveal">
+            <span class="check">✓</span>
+            Quer aprender a usar IA de forma prática.
+          </div>
+
+
+          <div class="audience-item reveal">
+            <span class="check">✓</span>
+            Está procurando novas possibilidades de renda extra.
+          </div>
+
+
+          <div class="audience-item reveal">
+            <span class="check">✓</span>
+            Quer começar um projeto digital.
+          </div>
+
+
+          <div class="audience-item reveal">
+            <span class="check">✓</span>
+            Tem pouco conhecimento sobre Inteligência Artificial.
+          </div>
+
+
+          <div class="audience-item reveal">
+            <span class="check">✓</span>
+            Quer conhecer ferramentas que podem economizar tempo.
+          </div>
+
+
+          <div class="audience-item reveal">
+            <span class="check">✓</span>
+            Procura ideias para explorar no próprio ritmo.
+          </div>
+
+
+        </div>
 
       </div>
 
+    </section>
 
-      <div class="card">
 
-        <div class="icon">
-          🎥
+    <!-- =======================================================
+         HIGHLIGHT
+         ======================================================= -->
+
+    <section class="highlight">
+
+      <div class="container">
+
+        <div class="highlight-box reveal">
+
+          <span>
+            GUIA PRÁTICO
+          </span>
+
+          <h2>
+            30 IDEIAS.
+            <br>
+            1 E-BOOK.
+            <br>
+            NOVAS POSSIBILIDADES.
+          </h2>
+
+          <p>
+            Em vez de ficar perdido procurando o que fazer com
+            Inteligência Artificial, tenha diferentes possibilidades
+            reunidas em um único material.
+          </p>
+
+          <a
+            href="#oferta"
+            class="white-button"
+          >
+            QUERO VER O E-BOOK →
+          </a>
+
         </div>
-
-        <h2>
-          Vídeos
-        </h2>
-
-        <p>
-          Veja as opções disponíveis.
-        </p>
 
       </div>
 
+    </section>
 
-      <div class="card">
 
-        <div class="icon">
-          💬
+    <!-- =======================================================
+         OFERTA
+         ======================================================= -->
+
+    <section
+      class="offer"
+      id="oferta"
+    >
+
+      <div class="container">
+
+        <div class="section-heading reveal">
+
+          <span>
+            Acesso digital
+          </span>
+
+          <h2>
+            Comece a explorar as possibilidades da IA
+          </h2>
+
+          <p>
+            Tenha o material digital para consultar quando quiser.
+          </p>
+
         </div>
 
-        <h2>
-          Conteúdo exclusivo
-        </h2>
 
-        <p>
-          Tudo organizado em um só lugar.
-        </p>
+        <div class="offer-card reveal">
+
+          <div class="offer-label">
+            E-BOOK DIGITAL
+          </div>
+
+          <h2>
+            30 Formas de Usar IA
+            para Criar Renda Extra
+          </h2>
+
+          <p>
+            Um guia com ideias e possibilidades para explorar
+            Inteligência Artificial.
+          </p>
+
+
+          <!-- EDITE OS VALORES ABAIXO -->
+
+          <div class="old-price">
+            DE R$ 47,90
+          </div>
+
+          <div class="price">
+            <small>R$</small> 19,90
+          </div>
+
+          <div class="offer-note">
+            Pagamento único • Produto digital
+          </div>
+
+
+          <!-- =================================================
+               TROQUE O LINK ABAIXO PELO SEU CHECKOUT
+               ================================================= -->
+
+          <a
+            href="https://SEU-LINK-DE-CHECKOUT-AQUI"
+            class="primary-button offer-button"
+            id="checkoutButton"
+          >
+            QUERO ACESSAR AGORA →
+          </a>
+
+
+          <div class="offer-note">
+            Você será direcionado para a página de pagamento.
+          </div>
+
+        </div>
 
       </div>
 
-    </div>
+    </section>
 
 
-    <div class="offer">
+    <!-- =======================================================
+         FAQ
+         ======================================================= -->
 
-      <h2>
-        Quer conferir?
-      </h2>
+    <section>
 
-      <p>
-        Clique abaixo para continuar.
-      </p>
+      <div class="container">
 
-      <a
-        class="button"
-        href="https://t.me/Vivisantsss_bot"
-        onclick="registrarClique('final');"
-      >
-        ACESSAR AGORA →
-      </a>
+        <div class="section-heading reveal">
 
-    </div>
+          <span>
+            Dúvidas
+          </span>
+
+          <h2>
+            Perguntas frequentes
+          </h2>
+
+        </div>
+
+
+        <div class="faq">
+
+
+          <div class="faq-item">
+
+            <button class="faq-question">
+
+              <span>
+                Como recebo o e-book?
+              </span>
+
+              <span>
+                +
+              </span>
+
+            </button>
+
+            <div class="faq-answer">
+
+              <p>
+                Após a confirmação do pagamento, o acesso será
+                disponibilizado de acordo com o sistema utilizado
+                no checkout.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="faq-item">
+
+            <button class="faq-question">
+
+              <span>
+                O conteúdo é digital?
+              </span>
+
+              <span>
+                +
+              </span>
+
+            </button>
+
+            <div class="faq-answer">
+
+              <p>
+                Sim. O produto apresentado nesta página é um
+                e-book digital.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="faq-item">
+
+            <button class="faq-question">
+
+              <span>
+                Preciso ter experiência com IA?
+              </span>
+
+              <span>
+                +
+              </span>
+
+            </button>
+
+            <div class="faq-answer">
+
+              <p>
+                Não é necessário ser especialista. O material foi
+                pensado como um ponto de partida para conhecer
+                diferentes possibilidades de uso da IA.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="faq-item">
+
+            <button class="faq-question">
+
+              <span>
+                Posso ler pelo celular?
+              </span>
+
+              <span>
+                +
+              </span>
+
+            </button>
+
+            <div class="faq-answer">
+
+              <p>
+                Sim. Por ser um material digital, você poderá
+                acessá-lo em dispositivos compatíveis com o formato
+                disponibilizado.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="faq-item">
+
+            <button class="faq-question">
+
+              <span>
+                O e-book garante que vou ganhar dinheiro?
+              </span>
+
+              <span>
+                +
+              </span>
+
+            </button>
+
+            <div class="faq-answer">
+
+              <p>
+                Não. O material apresenta ideias e possibilidades
+                de uso da IA. Resultados financeiros dependem de
+                diversos fatores, incluindo execução, mercado,
+                oferta, divulgação e experiência individual.
+              </p>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         CTA FINAL
+         ======================================================= -->
+
+    <section class="final-cta">
+
+      <div class="container">
+
+        <div class="final-box reveal">
+
+          <h2>
+            Suas próximas ideias podem começar aqui.
+          </h2>
+
+          <p>
+            Conheça 30 maneiras de explorar a Inteligência Artificial
+            e escolha aquelas que fazem sentido para você.
+          </p>
+
+          <a
+            href="#oferta"
+            class="primary-button"
+          >
+            QUERO CONHECER O E-BOOK →
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
 
   </main>
 
 
+  <!-- =========================================================
+       FOOTER
+       ========================================================= -->
+
   <footer>
-    © 2026 — Todos os direitos reservados.
+
+    <div class="container">
+
+      <p>
+        © 2026 • 30 Formas de Usar IA para Criar Renda Extra
+      </p>
+
+      <p style="margin-top:6px;">
+        Material digital para fins educacionais.
+      </p>
+
+    </div>
+
   </footer>
 
 
+  <!-- =========================================================
+       JAVASCRIPT
+       ========================================================= -->
+
   <script>
 
-    function registrarClique(local) {
+    /* =========================================================
+       FAQ
+       ========================================================= */
+
+    const faqItems =
+      document.querySelectorAll(".faq-item");
+
+    faqItems.forEach(item => {
+
+      const question =
+        item.querySelector(".faq-question");
+
+      question.addEventListener("click", () => {
+
+        const wasActive =
+          item.classList.contains("active");
+
+        faqItems.forEach(other => {
+          other.classList.remove("active");
+        });
+
+        if (!wasActive) {
+          item.classList.add("active");
+        }
+
+      });
+
+    });
+
+
+    /* =========================================================
+       ANIMAÇÕES AO ENTRAR NA TELA
+       ========================================================= */
+
+    const revealElements =
+      document.querySelectorAll(".reveal");
+
+    const observer =
+      new IntersectionObserver(
+        entries => {
+
+          entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+              entry.target.classList.add("visible");
+
+              observer.unobserve(entry.target);
+
+            }
+
+          });
+
+        },
+        {
+          threshold: 0.12
+        }
+      );
+
+
+    revealElements.forEach(element => {
+
+      observer.observe(element);
+
+    });
+
+
+    /* =========================================================
+       SCROLL SUAVE DOS BOTÕES
+       ========================================================= */
+
+    document
+      .querySelectorAll('a[href^="#"]')
+      .forEach(link => {
+
+        link.addEventListener("click", function(e) {
+
+          const target =
+            document.querySelector(
+              this.getAttribute("href")
+            );
+
+          if (target) {
+
+            e.preventDefault();
+
+            target.scrollIntoView({
+              behavior: "smooth"
+            });
+
+          }
+
+        });
+
+      });
+
+
+    /* =========================================================
+       CHECKOUT
+       ========================================================= */
+
+    const checkoutButton =
+      document.getElementById("checkoutButton");
+
+    checkoutButton.addEventListener("click", function(e) {
+
+      const link = this.getAttribute("href");
 
       if (
-        typeof ttq !== "undefined" &&
-        typeof ttq.track === "function"
+        !link ||
+        link.includes("SEU-LINK-DE-CHECKOUT-AQUI")
       ) {
 
-        ttq.track(
-          "ClickButton",
-          {
-            button_location: local
-          }
+        e.preventDefault();
+
+        alert(
+          "Configure primeiro o link do seu checkout no arquivo index.html."
         );
 
       }
 
-    }
+    });
 
   </script>
 
-</body>
 
+</body>
 </html>
+```
